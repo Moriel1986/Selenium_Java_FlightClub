@@ -1,0 +1,150 @@
+package Page_Object_Model;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import Page_Object_Model.FlightClubBaseClass;
+
+public class CaseStudy1 extends FlightClubBaseClass
+{
+
+	
+	
+	@Test(priority=1)
+	public void ValidateSearchBar() throws InterruptedException 
+	{
+		FlightClubHomePage FlightClubTest = PageFactory.initElements(driver, FlightClubHomePage.class);
+		//Add explicit wait
+		FlightClubTest.SearchBar("Jordan 13");
+		String currentTitle=driver.getTitle();
+		System.out.println(currentTitle);
+		Assert.assertTrue(currentTitle.contains("Sneakers. Here. | Flight Club"));
+		//If conditional for validation//
+		//Scroll down to the footer and click contact us java_script executer //
+		//Mouse hover over button and click//
+		//For loop through elements
+		
+		
+		
+
+	}
+	
+	@Test(priority=2)
+	public void ValidateAirJordans() throws InterruptedException 
+	{
+		FlightClubHomePage FlightClubTest = PageFactory.initElements(driver, FlightClubHomePage.class);
+		FlightClubTest.AirJordans();
+		String currentTitle=driver.getTitle();
+		System.out.println(currentTitle);
+		Assert.assertTrue(currentTitle.contains("Air Jordan Shoes for Men & Women - Nike | Flight Club"));
+		//If conditional for validation//
+		//Scroll down to the footer and click contact us java_script executer //
+		//Mouse hover over button and click//
+		//For loop through elements
+		
+		
+		
+	}
+	
+	@Test(priority=3)
+	public void ValidateYeezy() throws InterruptedException 
+	{
+		FlightClubHomePage FlightClubTest = PageFactory.initElements(driver, FlightClubHomePage.class);
+		FlightClubTest.Yezzy();
+		String currentTitle=driver.getTitle();
+		System.out.println(currentTitle);
+		Assert.assertTrue(currentTitle.contains("Adidas Yeezy Shoes for Men, Women & Infants | Flight Club"));
+		//If conditional for validation//
+		//Scroll down to the footer and click contact us java_script executer //
+		//Mouse hover over button and click//
+		//For loop through elements
+		
+		
+	
+		
+	}
+	@Test(priority=4)
+	public void ValidateMoreSneakers() throws InterruptedException 
+	{
+		FlightClubHomePage FlightClubTest = PageFactory.initElements(driver, FlightClubHomePage.class);
+		FlightClubTest.MoreSneakers();
+		String currentTitle=driver.getTitle();
+		System.out.println(currentTitle);
+		Assert.assertTrue(currentTitle.contains("Name Brand Sneakers | Flight Club"));
+		//If conditional for validation//
+		//Scroll down to the footer and click contact us java_script executer //
+		//Mouse hover over button and click//
+		//For loop through elements
+		
+		
+	}
+	@Test(priority=5)
+	public void ValidateAdidas() throws InterruptedException 
+	{
+		FlightClubHomePage FlightClubTest = PageFactory.initElements(driver, FlightClubHomePage.class);
+		FlightClubTest.Adidas();
+		String currentTitle=driver.getTitle();
+		System.out.println(currentTitle);
+		Assert.assertTrue(currentTitle.contains("Adidas Shoes - Men, Women, Girls & Boys Sneakers | Flight Club"));
+		//If conditional for validation//
+		//Scroll down to the footer and click contact us java_script executer //
+		//Mouse hover over button and click//
+		//For loop through elements
+		
+	}
+	
+	@Test(priority=6)
+	public void ValidateApparel() throws InterruptedException 
+	{
+		FlightClubHomePage FlightClubTest = PageFactory.initElements(driver, FlightClubHomePage.class);
+		FlightClubTest.Apparel();
+		String currentTitle=driver.getTitle();
+		System.out.println(currentTitle);
+		Assert.assertTrue(currentTitle.contains("Apparel | Flight Club"));
+		//If conditional for validation//
+		//Scroll down to the footer and click contact us java_script executer //
+		//Mouse hover over button and click//
+		//For loop through elements
+		
+		
+		
+	}
+	
+	@Test(priority=7)
+	public void ValidateNewReleases() throws InterruptedException 
+	{
+		FlightClubHomePage FlightClubTest = PageFactory.initElements(driver, FlightClubHomePage.class);
+		FlightClubTest.NewReleases();
+		String currentTitle=driver.getTitle();
+		System.out.println(currentTitle);
+		Assert.assertTrue(currentTitle.contains("New Releases | Flight Club"));
+		//If conditional for validation//
+		//Scroll down to the footer and click contact us java_script executer //
+		//Mouse hover over button and click//
+		//For loop through elements
+		
+		
+		
+	}
+	
+	@Test(priority=8)
+	public void ValidatePriceDrops() throws InterruptedException 
+	{
+		FlightClubHomePage FlightClubTest = PageFactory.initElements(driver, FlightClubHomePage.class);
+		FlightClubTest.PriceDrops();
+		String currentTitle=driver.getTitle();
+		System.out.println(currentTitle);
+		Assert.assertTrue(currentTitle.contains("Price Drops | Flight Club"));
+		//If conditional for validation//
+		//Scroll down to the footer and click contact us java_script executer //
+		//Mouse hover over button and click//
+		//For loop through elements
+		
+		
+		
+	}
+
+	
+	
+	}
+	
+
